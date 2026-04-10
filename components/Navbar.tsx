@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#pricing"
+              href="https://seraiq.com"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors px-4 py-2"
             >
               Log In

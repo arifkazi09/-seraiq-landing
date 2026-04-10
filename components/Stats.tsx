@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const STATS = [
-  { value: 100, suffix: '+', label: 'Partner Salons', sub: 'across 20 cities' },
-  { value: 50000, suffix: '+', label: 'Happy Members', sub: 'and growing' },
-  { value: 4.9, suffix: '★', label: 'App Rating', sub: 'on Play Store' },
-  { value: 98, suffix: '%', label: 'Satisfaction', sub: 'rate reported' },
+  { value: 20, suffix: '+', label: 'Partner Salons', sub: 'across Gujarat' },
+  { value: 500, suffix: '+', label: 'Early Members', sub: 'and growing fast' },
+  { value: 4.8, suffix: '★', label: 'Avg Rating', sub: 'from member feedback' },
+  { value: 96, suffix: '%', label: 'Satisfaction', sub: 'rate reported' },
 ];
 
 function CountUp({ target, suffix, duration = 2 }: { target: number; suffix: string; duration?: number }) {

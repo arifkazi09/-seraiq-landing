@@ -1,18 +1,31 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Smartphone, Star } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function AppDownload() {
+  const [phone, setPhone] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!phone || phone.length < 10) return;
+    setLoading(true);
+    // Simulate submission — replace with real API call when ready
+    await new Promise(r => setTimeout(r, 800));
+    setLoading(false);
+    setSubmitted(true);
+  };
+
   return (
     <section className="py-28 relative overflow-hidden">
-      {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#14142a] to-[#0D0D1F]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
       <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-96 h-96 bg-gold/8 rounded-full blur-[100px]" />
       <div className="absolute -right-32 top-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-900/30 rounded-full blur-[100px]" />
 
-      {/* Grid lines */}
       <div className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: 'linear-gradient(rgba(201,168,76,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px)',
@@ -20,7 +33,7 @@ export default function AppDownload() {
         }}
       />
 
-      <div className="relative max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      <div className="relative max-w-2xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,58 +50,49 @@ export default function AppDownload() {
 
           {/* Headline */}
           <div>
-            <h2 className="text-4xl lg:text-6xl font-black text-white mb-5 leading-tight">
-              Ready to transform
+            <h2 className="text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
+              Be the first to
               <br />
-              <span className="text-gold-gradient">your salon experience?</span>
+              <span className="text-gold-gradient">experience SERAIQ</span>
             </h2>
             <p className="text-white/50 text-lg max-w-xl mx-auto">
-              Join thousands of Indians who&apos;ve already upgraded their grooming routine.
-              Download free. Start your 7-day trial today.
+              App launching soon across Gujarat. Join the waitlist and get early access + 1 free month.
             </p>
           </div>
 
-          {/* Rating */}
-          <div className="flex items-center justify-center gap-2">
-            <div className="flex gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} size={16} className="fill-gold text-gold" />
-              ))}
-            </div>
-            <span className="text-white/60 text-sm">4.9 · 2,400+ reviews</span>
-          </div>
-
-          {/* Store buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {/* Play Store */}
-            <a
-              href="#"
-              className="group flex items-center gap-4 glass rounded-2xl px-6 py-4 border border-white/15 hover:border-gold/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold/10 min-w-[200px]"
+          {/* Waitlist form */}
+          {!submitted ? (
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input
+                type="tel"
+                value={phone}
+                onChange={e => setPhone(e.target.value.replace(/\D/g, '').slice(0, 10))}
+                placeholder="Your WhatsApp number"
+                className="flex-1 px-5 py-4 rounded-full bg-white/8 border border-white/15 text-white placeholder-white/30 focus:outline-none focus:border-gold/50 text-sm"
+              />
+              <button
+                type="submit"
+                disabled={loading || phone.length < 10}
+                className="flex items-center justify-center gap-2 px-6 py-4 rounded-full font-bold text-navy text-sm transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96C)' }}
+              >
+                {loading ? 'Joining...' : (
+                  <>Join Waitlist <ArrowRight size={15} /></>
+                )}
+              </button>
+            </form>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex items-center justify-center gap-3 text-green-400 font-semibold"
             >
-              <div className="text-3xl">▶</div>
-              <div className="text-left">
-                <p className="text-white/50 text-[10px] uppercase tracking-wider">Get it on</p>
-                <p className="text-white font-bold text-lg leading-tight">Google Play</p>
-              </div>
-            </a>
+              <CheckCircle size={22} />
+              You&apos;re on the list! We&apos;ll WhatsApp you when we launch.
+            </motion.div>
+          )}
 
-            {/* App Store */}
-            <a
-              href="#"
-              className="group flex items-center gap-4 glass rounded-2xl px-6 py-4 border border-white/15 hover:border-gold/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold/10 min-w-[200px]"
-            >
-              <div className="text-3xl">🍎</div>
-              <div className="text-left">
-                <p className="text-white/50 text-[10px] uppercase tracking-wider">Download on the</p>
-                <p className="text-white font-bold text-lg leading-tight">App Store</p>
-              </div>
-            </a>
-          </div>
-
-          {/* Subtext */}
-          <p className="text-white/30 text-sm">
-            Available for Android & iOS · Free download · Cancel anytime
-          </p>
+          <p className="text-white/25 text-xs">No spam. Just your early access invite.</p>
         </motion.div>
       </div>
     </section>

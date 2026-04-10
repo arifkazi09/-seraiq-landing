@@ -136,7 +136,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs text-white/50">
-                  <span className="text-white font-semibold">10,000+</span> happy members
+                  <span className="text-white font-semibold">500+</span> early members across Gujarat
                 </p>
               </div>
             </motion.div>

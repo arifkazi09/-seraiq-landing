@@ -1,9 +1,10 @@
 'use client';
 
 const SALONS = [
-  'Style Studio Mumbai', 'The Barber Lab', 'Luxe Hair Lounge', 'Ahmedabad Cuts',
-  'Bangalore Bliss Salon', 'Delhi Crown Cuts', 'Pune Style Hub', 'Hyderabad Hair House',
-  'Chennai Chic Salon', 'Kolkata Kuts', 'Jaipur Jewel Salon', 'Surat Style Studio',
+  'Smart Salon · Ahmedabad', 'Launching in Surat', 'Launching in Vadodara',
+  'Launching in Rajkot', 'Launching in Gandhinagar', 'Expanding across Gujarat',
+  'Smart Salon · Ahmedabad', 'Launching in Surat', 'Launching in Vadodara',
+  'Launching in Rajkot', 'Launching in Gandhinagar', 'Expanding across Gujarat',
 ];
 
 // Duplicate for seamless loop
@@ -14,7 +15,7 @@ export default function TrustBar() {
     <section className="py-12 border-y border-white/5 overflow-hidden relative">
       <div className="text-center mb-8">
         <p className="text-white/30 text-sm font-medium tracking-widest uppercase">
-          Trusted by 100+ premium partner salons across India
+          Growing partner network across Gujarat — onboarding now
         </p>
       </div>
 
