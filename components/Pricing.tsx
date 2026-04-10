@@ -172,7 +172,7 @@ export default function Pricing() {
 
                 {/* CTA */}
                 <a
-                  href="#"
+                  href={`https://app.seraiq.com/signup?plan=${plan.id}`}
                   className={`block w-full text-center py-3.5 rounded-full text-sm font-bold transition-all duration-300 mb-7 hover:scale-105 active:scale-95 ${
                     plan.highlight
                       ? 'text-navy shadow-lg hover:shadow-gold/30'

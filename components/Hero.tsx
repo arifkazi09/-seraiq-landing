@@ -88,6 +88,16 @@ export default function Hero() {
               all with one affordable subscription. Cancel anytime.
             </motion.p>
 
+            {/* City availability */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.25 }}
+              className="text-sm text-white/40 -mt-4"
+            >
+              📍 Currently live in <span className="text-gold/80 font-semibold">Ahmedabad</span> · Launching in Surat, Vadodara & Rajkot
+            </motion.p>
+
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -136,7 +146,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs text-white/50">
-                  <span className="text-white font-semibold">500+</span> early members across Gujarat
+                  <span className="text-white font-semibold">Join our early members</span> across Gujarat
                 </p>
               </div>
             </motion.div>

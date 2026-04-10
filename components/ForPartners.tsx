@@ -81,7 +81,9 @@ export default function ForPartners() {
             </div>
 
             <a
-              href="#"
+              href="https://wa.me/917567194202?text=Hi%20SERAIQ%2C%20I%20want%20to%20apply%20as%20a%20Salon%20Partner"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-navy font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold/20"
               style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96C)' }}
             >
@@ -124,7 +126,9 @@ export default function ForPartners() {
             </div>
 
             <a
-              href="#"
+              href="https://wa.me/917567194202?text=Hi%20SERAIQ%2C%20I%20want%20to%20become%20a%20StylePro%20Ambassador"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-white font-bold text-sm px-6 py-3 rounded-full border border-white/20 hover:border-gold/50 hover:text-gold transition-all duration-300 hover:scale-105"
             >
               Become a StylePro
