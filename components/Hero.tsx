@@ -67,6 +67,16 @@ export default function Hero() {
               </h1>
             </motion.div>
 
+            {/* Slogan */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="text-base italic text-gold/80 tracking-wide -mt-4"
+            >
+              Your Beauty Story, Remembered by AI.
+            </motion.p>
+
             {/* Subtitle */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -74,7 +84,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg text-white/60 max-w-xl leading-relaxed mx-auto lg:mx-0"
             >
-              Book premium salons, get AI hair recommendations, and track your style journey —
+              Book premium salons, get AI beauty recommendations, and track your style journey —
               all with one affordable subscription. Cancel anytime.
             </motion.p>
 
