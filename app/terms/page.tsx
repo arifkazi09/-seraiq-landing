@@ -31,7 +31,7 @@ export default function TermsOfService() {
             </span>
           </div>
           <h1 className="text-4xl font-black text-white mb-3">Terms of Service</h1>
-          <p className="text-white/40 text-sm">Last updated: April 2025</p>
+          <p className="text-white/40 text-sm">Last updated: April 2026</p>
         </div>
 
         {/* Content */}
@@ -74,6 +74,7 @@ export default function TermsOfService() {
               You may cancel or pause your subscription at any time from the app. Cancellation takes effect at the end
               of your current billing cycle. Pausing is available for subscribers travelling or temporarily unavailable,
               for up to 30 days per year.
+              Subscription fees are non-refundable except as required by applicable Indian law.
             </p>
           </section>
 

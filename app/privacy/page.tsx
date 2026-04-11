@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
             </span>
           </div>
           <h1 className="text-4xl font-black text-white mb-3">Privacy Policy</h1>
-          <p className="text-white/40 text-sm">Last updated: April 2025</p>
+          <p className="text-white/40 text-sm">Last updated: April 2026</p>
         </div>
 
         {/* Content */}
@@ -54,6 +54,7 @@ export default function PrivacyPolicy() {
               <li><strong className="text-white">Booking data</strong> — salon appointments, services booked, and visit history</li>
               <li><strong className="text-white">Subscription data</strong> — plan selected, payment status (we do not store card details — Razorpay handles payments)</li>
               <li><strong className="text-white">Device & usage data</strong> — app version, device type, and basic usage analytics</li>
+              <li><strong className="text-white">Analytics data</strong> — we use privacy-friendly analytics to understand how users navigate the platform. No personally identifiable data is shared with analytics providers.</li>
             </ul>
           </section>
 
@@ -98,6 +99,7 @@ export default function PrivacyPolicy() {
               <li>Request deletion of your account and data</li>
               <li>Opt out of marketing messages at any time</li>
             </ul>
+            <p className="mt-3">These rights are provided in accordance with India&apos;s Digital Personal Data Protection Act, 2023.</p>
             <p className="mt-3">
               To exercise any of these rights, contact us at{' '}
               <a href="mailto:arif@seraiq.com" className="text-gold hover:underline">arif@seraiq.com</a>{' '}
