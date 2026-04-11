@@ -13,10 +13,20 @@ export default function AppDownload() {
     e.preventDefault();
     if (!phone || phone.length < 10) return;
     setLoading(true);
-    // Simulate submission — replace with real API call when ready
-    await new Promise(r => setTimeout(r, 800));
+
+    // Send waitlist lead to SERAIQ via WhatsApp
+    const message = encodeURIComponent(
+      `Hi SERAIQ, I want to join the waitlist!\n\nMy WhatsApp number: +91${phone}\n\nPlease notify me when the app launches.`
+    );
+    const waUrl = `https://wa.me/917567194202?text=${message}`;
+
     setLoading(false);
     setSubmitted(true);
+
+    // Open WhatsApp with the pre-filled message after short delay so user sees confirmation
+    setTimeout(() => {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }, 600);
   };
 
   return (

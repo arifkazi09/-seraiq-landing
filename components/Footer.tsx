@@ -113,8 +113,8 @@ export default function Footer() {
             © {year} SERAIQ Technologies Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="mailto:arif@seraiq.com" className="text-white/25 text-xs hover:text-gold/70 transition-colors">Privacy Policy</a>
-            <a href="mailto:arif@seraiq.com" className="text-white/25 text-xs hover:text-gold/70 transition-colors">Terms of Service</a>
+            <a href="/privacy" className="text-white/25 text-xs hover:text-gold/70 transition-colors">Privacy Policy</a>
+            <a href="/terms" className="text-white/25 text-xs hover:text-gold/70 transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
