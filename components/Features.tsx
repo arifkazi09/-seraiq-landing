@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Clock, QrCode, BookOpen, Users, RefreshCw } from 'lucide-react';
+import { Brain, Clock, QrCode, BookOpen, Users, RefreshCw, Sparkles } from 'lucide-react';
 
 const FEATURES = [
   {
@@ -44,6 +44,13 @@ const FEATURES = [
     title: 'Full Flexibility',
     description: 'Pause your subscription during travel. Upgrade, downgrade, or cancel anytime — no penalties, no drama.',
     badge: null,
+    highlight: false,
+  },
+  {
+    icon: <Sparkles size={24} />,
+    title: 'Magic Mirror',
+    description: 'Try new hairstyles and hair colours virtually before your appointment. Our AI simulates your look in real time — no commitment needed.',
+    badge: 'Coming Soon',
     highlight: false,
   },
 ];

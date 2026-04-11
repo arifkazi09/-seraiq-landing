@@ -5,7 +5,7 @@ import { TrendingUp, Users, BarChart3, Wallet, MapPin, Award } from 'lucide-reac
 
 const SALON_BENEFITS = [
   { icon: <TrendingUp size={16} />, text: 'Guaranteed monthly revenue from subscribers' },
-  { icon: <Users size={16} />, text: 'Access to 10,000+ pre-qualified customers' },
+  { icon: <Users size={16} />, text: 'Access to growing subscriber base across Gujarat' },
   { icon: <BarChart3 size={16} />, text: 'Real-time analytics dashboard' },
   { icon: <Award size={16} />, text: 'SERAIQ Certified Partner badge & promotion' },
 ];

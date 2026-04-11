@@ -217,7 +217,7 @@ export default function Hero() {
 
                 {/* Quick actions */}
                 <div className="mx-4 grid grid-cols-2 gap-2">
-                  {['Book Now', 'Magic Mirror', 'My Bookings', 'Shop'].map((action, i) => (
+                  {['Book Now', 'AI Profile', 'My Bookings', 'Shop'].map((action, i) => (
                     <div key={i} className="p-3 rounded-xl text-center" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}>
                       <p className="text-white/70 text-[10px] font-medium">{action}</p>
                     </div>

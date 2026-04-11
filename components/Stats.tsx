@@ -56,8 +56,6 @@ export default function Stats() {
               className="relative group"
             >
               <div className="glass rounded-2xl p-6 lg:p-8 text-center gold-glow-hover transition-all duration-300 hover:-translate-y-1">
-                {/* Glow dot */}
-                <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-gold/50 group-hover:bg-gold transition-colors" />
 
                 <div className="text-4xl lg:text-5xl font-black text-gold-gradient mb-2">
                   <CountUp target={stat.value} suffix={stat.suffix} />
