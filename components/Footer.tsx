@@ -60,6 +60,7 @@ export default function Footer() {
             <h4 className="text-white text-sm font-bold tracking-wide">Product</h4>
             <ul className="space-y-2.5">
               <li><a href="#features" className="text-white/35 text-sm hover:text-gold transition-colors duration-200">Features</a></li>
+              <li><a href="#features" className="text-white/35 text-sm hover:text-gold transition-colors duration-200">SERAIQ Passport</a></li>
               <li><a href="#pricing" className="text-white/35 text-sm hover:text-gold transition-colors duration-200">Pricing</a></li>
               <li><a href="#how-it-works" className="text-white/35 text-sm hover:text-gold transition-colors duration-200">How It Works</a></li>
               <li><a href="https://app.seraiq.com/signup" className="text-white/35 text-sm hover:text-gold transition-colors duration-200">Get Started</a></li>

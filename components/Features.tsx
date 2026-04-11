@@ -1,41 +1,48 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Brain, Clock, QrCode, BookOpen, Users, RefreshCw, Sparkles } from 'lucide-react';
+import { Brain, Clock, QrCode, BookOpen, Users, RefreshCw, Sparkles, BookMarked } from 'lucide-react';
 
 const FEATURES = [
   {
     icon: <Brain size={24} />,
     title: 'AI Hair Analysis',
-    description: 'Our AI learns your hair type, texture, and history to recommend the perfect styles and treatments — personalized just for you.',
+    description: 'Build your SERAIQ Passport — upload photos of your preferred style from all angles, save what you love and what to avoid, add your hair type and concerns. Every stylist at every SERAIQ salon sees your full profile before touching your hair.',
     badge: 'AI-Powered',
     highlight: true,
   },
   {
+    icon: <BookMarked size={24} />,
+    title: 'Your SERAIQ Passport',
+    description: 'Save photos of your preferred hairstyle from front, sides, and back. Add notes on what went wrong before. Log your hair type, skin concerns, and product allergies. One profile — works at every SERAIQ salon everywhere.',
+    badge: 'Core Feature',
+    highlight: false,
+  },
+  {
     icon: <Clock size={24} />,
     title: 'Priority Booking',
-    description: 'Skip the queue with guaranteed time slots. Premium and Elite members get first access to the best stylists in the city.',
+    description: 'Skip the queue with guaranteed time slots. Plus and Elite members get first access to the best stylists in the city — book up to 7 days in advance.',
     badge: null,
     highlight: false,
   },
   {
     icon: <QrCode size={24} />,
     title: 'QR Check-In',
-    description: 'Your digital membership QR lets you walk in seamlessly. The salon is ready for you before you arrive.',
+    description: 'Your digital membership QR lets you walk in seamlessly. The salon sees your full SERAIQ Passport — hair type, style photos, last visit notes — before you sit down.',
     badge: null,
     highlight: false,
   },
   {
     icon: <BookOpen size={24} />,
     title: 'Style History',
-    description: 'Every cut, every treatment — logged. Share your exact preferences with any partner salon stylist, anywhere.',
+    description: 'Every visit is logged — date, salon, services, what you loved, what to change. Your style history travels with you to any SERAIQ salon in any city. Moving from Ahmedabad to Dubai? Your profile comes with you.',
     badge: null,
     highlight: false,
   },
   {
     icon: <Users size={24} />,
-    title: 'Expert Stylists',
-    description: 'Every SERAIQ partner salon features certified, background-verified professionals who understand your subscription.',
+    title: 'SERAIQ Certified Salons',
+    description: 'Every partner salon passes a mandatory quality audit before onboarding. We check hygiene, infrastructure, stylist skill, and service standards. No shortcuts. No compromises. If they don\'t meet SERAIQ standards, they don\'t join our network.',
     badge: 'Certified',
     highlight: false,
   },
@@ -49,7 +56,7 @@ const FEATURES = [
   {
     icon: <Sparkles size={24} />,
     title: 'Magic Mirror',
-    description: 'Try new hairstyles and hair colours virtually before your appointment. Our AI simulates your look in real time — no commitment needed.',
+    description: 'After every SERAIQ visit, the Magic Mirror automatically updates your SERAIQ Passport with your new look — photos captured, profile refreshed, no manual uploads needed. Coming soon to all Gold+ partner salons.',
     badge: 'Coming Soon',
     highlight: false,
   },

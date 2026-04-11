@@ -84,8 +84,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-lg text-white/60 max-w-xl leading-relaxed mx-auto lg:mx-0"
             >
-              Book premium salons, get AI beauty recommendations, and track your style journey —
-              all with one affordable subscription. Cancel anytime.
+              Walk into any SERAIQ partner salon — your stylist already knows your hair type,
+              preferred style, and exactly what you want. No explaining. No bad cuts.
+              Just your best look, every month.
             </motion.p>
 
             {/* City availability */}
@@ -106,7 +107,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="#pricing"
+                href="https://app.seraiq.com/signup"
                 className="group relative inline-flex items-center justify-center gap-2 text-navy font-bold text-base px-8 py-4 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-xl hover:shadow-gold/30 animate-pulse-gold"
                 style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96C)' }}
               >
@@ -146,7 +147,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs text-white/50">
-                  <span className="text-white font-semibold">Join our early members</span> across Gujarat
+                  <span className="text-white font-semibold">Join 500+ early members</span> across Gujarat
                 </p>
               </div>
             </motion.div>
@@ -180,7 +181,7 @@ export default function Hero() {
                 <div className="px-5 pt-3 pb-4">
                   <p className="text-white/50 text-xs">Good morning,</p>
                   <div className="flex justify-between items-center mt-0.5">
-                    <p className="text-white font-bold text-lg">Arif ✦</p>
+                    <p className="text-white font-bold text-lg">Rajan ✦</p>
                     <div className="px-2.5 py-1 rounded-full text-xs font-bold text-navy"
                       style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96C)' }}>
                       Elite
@@ -193,8 +194,8 @@ export default function Hero() {
                   style={{ background: 'linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05))', border: '1px solid rgba(201,168,76,0.25)' }}>
                   <div className="flex justify-between items-start mb-2">
                     <div>
-                      <p className="text-white font-semibold text-sm">Style Studio Mumbai</p>
-                      <p className="text-white/50 text-xs mt-0.5">Raj Sharma · Tomorrow, 2:00 PM</p>
+                      <p className="text-white font-semibold text-sm">Smart Salon · Ahmedabad</p>
+                      <p className="text-white/50 text-xs mt-0.5">Rajan Shah · Tomorrow, 2:00 PM</p>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center">
                       <Sparkles size={14} className="text-gold" />

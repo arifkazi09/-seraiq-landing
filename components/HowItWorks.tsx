@@ -9,7 +9,7 @@ const STEPS = [
     icon: <Smartphone size={28} className="text-gold" />,
     title: 'Download & Subscribe',
     description: 'Pick your plan — Basic, Premium, or Elite. Download the SERAIQ app in 60 seconds and unlock a world of premium salons.',
-    detail: 'From ₹599/month',
+    detail: 'From ₹799/month for men · From ₹999/month for women',
   },
   {
     step: '02',
@@ -22,7 +22,7 @@ const STEPS = [
     step: '03',
     icon: <QrCode size={28} className="text-gold" />,
     title: 'Walk In & Get Styled',
-    description: 'Show your unique QR code at the salon entrance. Your stylist already knows your hair profile. Sit back and enjoy the experience.',
+    description: 'Show your QR code at the salon. Your stylist opens the SERAIQ app — your hair type, preferred style, your photos, and your last visit notes are already there. They know you before you say a word.',
     detail: 'Seamless check-in',
   },
 ];

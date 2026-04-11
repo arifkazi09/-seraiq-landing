@@ -61,14 +61,25 @@ export default function AppDownload() {
           {/* Headline */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
-              Be the first to
+              Your Beauty Story
               <br />
-              <span className="text-gold-gradient">experience SERAIQ</span>
+              <span className="text-gold-gradient">Starts Here</span>
             </h2>
             <p className="text-white/50 text-lg max-w-xl mx-auto">
-              App launching soon across Gujarat. Join the waitlist and get early access + 1 free month.
+              Join SERAIQ and never explain your hair to a stylist again. 7-day free trial — no credit card needed.
             </p>
           </div>
+
+          {/* Primary CTA */}
+          <a
+            href="https://app.seraiq.com/signup"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-navy text-base transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-xl hover:shadow-gold/30"
+            style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96C)' }}
+          >
+            Start Free Trial →
+          </a>
+
+          <p className="text-white/30 text-xs -mt-4">Or join the waitlist below if you&apos;re outside Ahmedabad</p>
 
           {/* Waitlist form */}
           {!submitted ? (

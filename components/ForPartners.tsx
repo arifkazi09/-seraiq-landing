@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 import { TrendingUp, Users, BarChart3, Wallet, MapPin, Award } from 'lucide-react';
 
 const SALON_BENEFITS = [
-  { icon: <TrendingUp size={16} />, text: 'Guaranteed monthly revenue from subscribers' },
-  { icon: <Users size={16} />, text: 'Access to growing subscriber base across Gujarat' },
-  { icon: <BarChart3 size={16} />, text: 'Real-time analytics dashboard' },
+  { icon: <TrendingUp size={16} />, text: 'We pay you ₹350–850 per subscriber visit — directly' },
+  { icon: <Users size={16} />, text: 'Your slow hours earn ₹0 today. SERAIQ fills them with pre-paid, pre-profiled subscribers.' },
+  { icon: <BarChart3 size={16} />, text: 'Every subscriber arrives with their SERAIQ Passport — stylist knows exactly what to deliver before they sit down.' },
   { icon: <Award size={16} />, text: 'SERAIQ Certified Partner badge & promotion' },
 ];
 
 const STYLEPRO_BENEFITS = [
-  { icon: <Wallet size={16} />, text: '₹500 commission per subscriber you convert' },
+  { icon: <Wallet size={16} />, text: '₹350–₹700 commission per subscriber you convert (higher plans earn you more)' },
   { icon: <MapPin size={16} />, text: 'Walk-in customers to subscription in minutes' },
   { icon: <BarChart3 size={16} />, text: 'Track your earnings in real-time' },
   { icon: <Award size={16} />, text: 'Build your personal brand as a SERAIQ Pro' },

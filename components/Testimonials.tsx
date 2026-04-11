@@ -17,7 +17,7 @@ const TESTIMONIALS = [
     role: 'Premium Member, Ahmedabad',
     avatar: 'FM',
     rating: 5,
-    text: 'The stylist already knew my hair type before I sat down. That AI profile thing actually works — saved me 10 minutes of explaining every single visit.',
+    text: 'I uploaded my hair photos once during signup. Now every stylist at every SERAIQ salon opens the app and already knows exactly what I want — length, style, what went wrong last time. Never explained my hair again in 4 months.',
     color: '#B8952A',
   },
   {
