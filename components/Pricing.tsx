@@ -145,68 +145,9 @@ const WOMEN_PLANS: Plan[] = [
   },
 ];
 
-const WELLNESS_PLANS: Plan[] = [
-  {
-    id: 'relax',
-    name: 'Relax',
-    price: 1499,
-    tagline: 'Monthly wellness reset',
-    walkInValue: 'Unisex plan',
-    features: [
-      '1 Swedish Massage (60 min)',
-      '1 Head Massage (30 min)',
-      '1 Facial Treatment',
-      '1 Foot Spa & Soak',
-      '15% off all spa add-ons',
-      'AI SERAIQ Passport',
-      'QR Check-in',
-    ],
-    highlight: false,
-    cta: 'Start Relax',
-  },
-  {
-    id: 'wellness-elite',
-    name: 'Wellness Elite',
-    price: 2799,
-    tagline: 'Total body wellness',
-    badge: 'MOST POPULAR',
-    walkInValue: 'Unisex plan',
-    features: [
-      '2 Full Body Massages (any type)',
-      '1 Body Scrub & Polish',
-      '1 Facial Treatment',
-      'Unlimited Head Massages',
-      '1 Aromatherapy Session',
-      '20% off all spa add-ons',
-      'AI SERAIQ Passport',
-    ],
-    highlight: true,
-    cta: 'Start Wellness Elite',
-  },
-  {
-    id: 'couple',
-    name: 'SERAIQ Couple',
-    price: 3499,
-    tagline: 'Both of you. Together.',
-    badge: '❤️ Couples',
-    walkInValue: 'Best value for two',
-    features: [
-      'Man gets all Groom Plus services',
-      'Woman gets all Beauty Plus services',
-      'Book same salon, same day',
-      '20% off all couple services',
-      'AI SERAIQ Passport (both profiles)',
-      'Priority booking for two',
-    ],
-    highlight: false,
-    cta: 'Start Couple Plan',
-  },
-];
-
 const TABS = [
   { id: 'men', label: "Men's Grooming", plans: MEN_PLANS },
   { id: 'women', label: "Women's Beauty", plans: WOMEN_PLANS },
-  { id: 'wellness', label: 'Wellness & Couples', plans: WELLNESS_PLANS },
 ];
 
 function PlanCard({ plan, delay }: { plan: Plan; delay: number }) {

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { TrendingUp, Users, BarChart3, Wallet, MapPin, Award } from 'lucide-react';
 
 const SALON_BENEFITS = [
-  { icon: <TrendingUp size={16} />, text: 'We pay you ₹350–850 per subscriber visit — directly' },
+  { icon: <TrendingUp size={16} />, text: 'We pay you ₹350–₹1,000 per subscriber visit — directly' },
   { icon: <Users size={16} />, text: 'Your slow hours earn ₹0 today. SERAIQ fills them with pre-paid, pre-profiled subscribers.' },
   { icon: <BarChart3 size={16} />, text: 'Every subscriber arrives with their SERAIQ Passport — stylist knows exactly what to deliver before they sit down.' },
   { icon: <Award size={16} />, text: 'SERAIQ Certified Partner badge & promotion' },
